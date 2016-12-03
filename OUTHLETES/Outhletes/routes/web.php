@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/index','IndexController@index');
+Route::get('/signup','SignupController@signup');
+Route::get('/login','LoginController@login');
+Route::get('/faqs','FaqsController@faqs');
+Route::get('/profile','ProfileController@profile');
