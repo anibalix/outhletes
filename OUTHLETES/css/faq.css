@@ -1,0 +1,330 @@
+/*-----------------------------------   SETTINGS --------------------------------------- */
+/*-----------------------------------   SETTINGS --------------------------------------- */
+
+@import 'https://fonts.googleapis.com/css?family=Signika';
+@import 'https://fonts.googleapis.com/css?family=Oswald';
+@import 'https://fonts.googleapis.com/css?family=Dosis';
+
+html {
+    font-family: 'Dosis', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*-----------------------------------   MOBILE --------------------------------------- */
+/*-----------------------------------   MOBILE --------------------------------------- */
+
+@media (max-width: 550px) {
+
+/*------------- MAIN BODY ------------- */
+
+    .main_body{
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+        box-sizing: border-box;
+        display: block;
+        background-image: url("../imagenes/tenis.jpg");
+        background-color: #466379;
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        clear: both;
+        min-width: 200px;
+    }
+
+    .div_opacity {
+        width: 100%;
+        height: 100vh;
+        /*position: relative;*/
+        background-color: rgba(27, 26, 27, 0.2);
+    }
+
+/*------------- NAVIGATION BAR ------------- */
+
+    .nav_bar_top {
+        position: fixed;
+        top: 0;
+        left: 0;
+        /*display: inline-block;*/
+        /*background-color: rgba(74, 64, 78, 0.73);*/
+        background-color: black;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        /*height: 50px;*/
+        overflow: hidden;
+        padding: 2%;
+    }
+
+    .ul_nav_bar{
+        width: 100%;
+        position: relative;
+    }
+
+    .nav_bar_top ul {
+        display: block;
+        /*float: left;*/
+    }
+
+    .nav_bar_top li {
+        display: block;
+        width: auto;
+        /*float: left;*/
+    }
+
+    .button { /*BOTON LOGIN*/
+        /*position: absolute;
+        bottom: 33%;
+        right: 13%;*/
+        font-family: 'Dosis', sans-serif;
+        text-decoration: none;
+        color: orange;
+        font-weight: lighter;
+        border: 1px solid white;
+        border-radius: 10%;
+        padding: 10px;
+        text-align: center;
+        float: right;
+        margin-top: 6px;
+    }
+
+    .button:hover{
+        border-color: orange;
+        color: white;
+        background-color: orange;
+    }
+
+    #logo{ /*IMAGEN LOGO insertada x HTML*/
+        width: 50px;
+        float: left;
+        /*padding-left: 5%;*/
+    }
+
+    #logo_full{
+        display: none;
+    }
+
+/*------------- CONTENEDOR LOGIN ------------- */
+
+    .answers{
+      display: none;
+    }
+
+    .questions{
+      cursor: pointer;
+    }
+
+    .main_section {
+        position: relative;
+    }
+
+    .faqs{ /*LOGIN con APIs*/
+        box-sizing: border-box;
+        position: absolute;
+        top: 90px;
+        left: 5%;
+        width: 90%;
+        background-color: rgba(18, 18, 18, 0.72);
+        /*height: 40%;*/
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 8px;
+        padding: 2%;
+        padding-top: 4%;
+        padding-bottom: 2%;
+    }
+
+    .faqs:hover{
+        /*font-size: 1.7em;*/
+        /*font-weight: bold;*/
+        /*letter-spacing: 3px;*/
+        /*text-shadow: 0px 1px 2px white;*/
+        box-shadow: 0 0 8px 0 rgba(255,255,255,0.8);
+    }
+
+    .faqs_ul{
+        text-align: center;
+    }
+
+    .faqs_li{
+        color: white;
+    }
+
+    .faqs_li h2{
+        margin-top: 0;
+        color: orange;
+        margin-bottom: 6px;
+    }
+}
+
+/*-----------------------------------   DESKTOP --------------------------------------- */
+/*-----------------------------------   DESKTOP --------------------------------------- */
+
+@media (min-width: 550px) {
+
+/*------------- MAIN BODY ------------- */
+
+    .main_body{
+        margin: 0;
+        width: 100%;
+        /*height: 100vh;*/
+        box-sizing: border-box;
+        /*display: block;*/
+        background-image: url("../imagenes/bici.jpg");
+        background-color: #466379;
+        background-size: cover;
+        background-position: 60% 50%;
+        background-repeat: no-repeat;
+    }
+
+    .div_opacity {
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(27, 26, 27, 0.2);
+    }
+
+/*------------- NAVIGATION BAR ------------- */
+
+    .nav_bar_top {
+        box-sizing: border-box;
+        position: relative;
+        /*top: 0;
+        left: 0;*/
+        /*display: inline-block;*/
+        /*background-color: rgba(74, 64, 78, 0.73);*/
+        background-color: black;
+        width: 100%;
+        /*margin-left: auto;
+        margin-right: auto;*/
+        /*height: 80px;*/
+        overflow: hidden;
+        padding: 7px;
+    }
+
+    .ul_nav_bar{
+        width: 100%;
+        /*position: relative;*/
+    }
+
+    .nav_bar_top  ul {
+        display: block;
+        /*height: 90%;*/
+        /*float: left;*/
+    }
+
+    .nav_bar_top .ul_nav_bar li {
+        display: block;
+        width: auto;
+    }
+
+    .button { /*BOTON LOGIN*/
+        /*box-sizing: border-box;
+        position: absolute;
+        bottom: 33%;
+        right: 13%;*/
+        font-family: 'Dosis', sans-serif;
+        text-decoration: none;
+        /*margin-top: 8px;
+        margin-right: 20px;*/
+        color: orange;
+        font-weight: lighter;
+        border: 1px solid white;
+        border-radius: 10%;
+        padding: 10px;
+        /*position: absolute;
+        bottom: 28%;
+        right: 25px;*/
+        text-align: center;
+        float: right;
+        margin-top: 6px;
+        margin-right: 30px;
+    }
+
+    .button:hover{
+        border-color: orange;
+        background-color: orange;
+        color: white;
+        /*transition: 0.4s;*/
+    }
+
+    #logo{ /*IMAGEN LOGO insertada x HTML*/
+        display: none;
+    }
+
+    #logo_full{
+        width: 210px;
+        display: block;
+        float: left;
+        margin-top: 2px;
+        margin-left: 15px;
+    }
+
+/*------------- CONTENEDOR LOGIN ------------- */
+
+    .main_section {
+        position: relative;
+    }
+
+    .answers{
+      display: none;
+    }
+
+    .questions{
+      cursor: pointer;
+    }
+
+    .faqs{ /*LOGIN con APIs*/
+        width: 50%;
+        background-color: rgba(18, 18, 18, 0.72);
+        /*height: 40%;*/
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        border-radius: 8px;
+        padding: 2%;
+        padding-top: 2%;
+        padding-bottom: 1%;
+    }
+
+    /*.login_top h2{
+        background-color: black;
+        text-align: center;
+        margin: 0;
+        color: orange;
+        font-weight: lighter;
+        /*border-radius: 8px;
+        line-height: 1.3em;
+        letter-spacing: 1.5px;
+    }*/
+
+    .faqs:hover{
+        /*font-size: 1.7em;*/
+        /*font-weight: bold;*/
+        /*letter-spacing: 3px;*/
+        /*text-shadow: 0px 1px 2px white;*/
+        box-shadow: 0 0 8px 0 rgba(255,255,255,0.8);
+        transition: 0.2s;
+    }
+
+    .faqs_ul{
+        text-align: center;
+    }
+
+    .faqs_li{
+        color: white;
+    }
+
+    .faqs_li h2{
+        margin-top: 0;
+        color: orange;
+    }
+
+    /*.mas{
+        width: 15px;
+    }*/
+
+
+}

@@ -1,0 +1,584 @@
+/*-----------------------------------   SETTINGS --------------------------------------- */
+/*-----------------------------------   SETTINGS --------------------------------------- */
+
+@import 'https://fonts.googleapis.com/css?family=Signika';
+@import 'https://fonts.googleapis.com/css?family=Oswald';
+@import 'https://fonts.googleapis.com/css?family=Dosis';
+
+html {
+    font-family: 'Dosis', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*-----------------------------------   MOBILE --------------------------------------- */
+/*-----------------------------------   MOBILE --------------------------------------- */
+
+@media (max-width: 550px) {
+
+/*------------- MAIN BODY ------------- */
+
+    .main_body{
+        margin: 0;
+        width: 100%;
+        height: 100vh;
+        box-sizing: border-box;
+        display: block;
+        background-image: url("../imagenes/skate.jpg");
+        background-color: #466379;
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        clear: both;
+        min-width: 200px;
+    }
+
+    .div_opacity {
+        width: 100%;
+        height: 100vh;
+        /*position: relative;*/
+        background-color: rgba(27, 26, 27, 0.3);
+    }
+
+/*------------- NAVIGATION BAR ------------- */
+
+    .nav_bar_top {
+        position: fixed;
+        top: 0;
+        left: 0;
+        /*display: inline-block;*/
+        /*background-color: rgba(74, 64, 78, 0.73);*/
+        background-color: black;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        /*height: 50px;*/
+        overflow: hidden;
+        padding: 2%;
+    }
+
+    .ul_nav_bar{
+        width: 100%;
+        position: relative;
+    }
+
+    .nav_bar_top ul {
+        display: block;
+        /*float: left;*/
+    }
+
+    .nav_bar_top li {
+        display: block;
+        width: auto;
+        /*float: left;*/
+    }
+
+    .button { /*BOTON LOGIN*/
+        /*position: absolute;
+        bottom: 33%;
+        right: 13%;*/
+        font-family: 'Dosis', sans-serif;
+        text-decoration: none;
+        color: orange;
+        font-weight: lighter;
+        border: 1px solid white;
+        border-radius: 10%;
+        padding: 10px;
+        text-align: center;
+        float: right;
+        margin-top: 6px;
+    }
+
+    .button:hover{
+        border-color: orange;
+        color: white;
+        background-color: orange;
+    }
+
+    #logo{ /*IMAGEN LOGO insertada x HTML*/
+        width: 50px;
+        float: left;
+        /*padding-left: 5%;*/
+    }
+
+    #logo_full{
+        display: none;
+    }
+
+/*------------- CONTENEDOR LOGIN ------------- */
+
+    .main_section {
+        position: relative;
+    }
+
+    .login{ /*LOGIN con APIs*/
+        box-sizing: border-box;
+        position: absolute;
+        top: 90px;
+        left: 5%;
+        /*padding: 2%;*/
+        width: 90%;
+        background-color: rgba(18, 18, 18, 0.72);
+        /*height: 40%;*/
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 8px;
+        padding-top: 4%;
+        padding-bottom: 2%;
+    }
+
+    .login:hover{
+        /*font-size: 1.7em;*/
+        /*font-weight: bold;*/
+        /*letter-spacing: 3px;*/
+        /*text-shadow: 0px 1px 2px white;*/
+        box-shadow: 0 0 8px 0 rgba(255,255,255,0.8);
+    }
+
+    /*.login_top h2{
+        background-color: rgba(18, 18, 18, 0.62);
+        text-align: center;
+        margin: 0;
+        color: orange;
+        font-weight: lighter;
+        /*border-radius: 8px;
+        margin-bottom: 5%;
+        line-height: 1.3em;
+        letter-spacing: 1.5px;
+    }*/
+
+    input {
+        display: block;
+        width: 60%;
+        margin: 0 auto 0 auto;
+        border-radius: 4px;
+        background-color: rgba(18, 18, 18, -0.68);
+        padding: 1%;
+        border: none;
+        border-bottom: 1px solid orange;
+        border-radius: 4px;
+        color: white;
+        letter-spacing: 1.5px;
+    }
+
+    .remember_user {
+        display: inline-block;
+        width: 60%;
+        margin: 0 auto 0 auto;
+        margin-left: 20%;
+        /*overflow: hidden;*/
+    }
+
+    #remember_user{
+        display: inline-block;
+        font-size: 0.8em;
+        text-indent: 5px;
+        width: auto;
+        color: orange;
+    }
+
+    #olvido_contraseña{
+        text-decoration: none;
+        color: orange;
+        display: inline-block;
+        font-size: 0.8em;
+        margin-top: 8px;
+        /*float: right;*/
+    }
+
+    #olvido_contraseña:hover{
+        border-bottom: 1px dashed orange;
+    }
+
+    input:focus{
+        background-color: rgba(18, 18, 18, 0.32);
+        border: 1px solid white;
+        color: white;
+        font-weight: bold;
+        box-shadow: 0 0 4px 0 rgba(255,255,255,0.8);
+    }
+
+    input:hover {
+        border-bottom: 1px solid white;
+        color: white;
+    }
+
+    ::-webkit-input-placeholder {
+        color: rgba(247, 243, 239, 0.76);
+    }
+
+    :-moz-placeholder { /* Firefox 18- */
+        color: rgba(247, 243, 239, 0.76);
+    }
+
+    ::-moz-placeholder {  /* Firefox 19+ */
+        color: rgba(247, 243, 239, 0.76);
+    }
+
+    :-ms-input-placeholder {
+        color: rgba(247, 243, 239, 0.76);
+    }
+
+    .submit_login{
+        display: block;
+        width: 40%;
+        margin: 0 auto 0 auto;
+        border-radius: 4px;
+        background-color: rgba(18, 18, 18, -0.68);
+        padding: 2%;
+        border: 1px solid orange;
+        border-radius: 4px;
+        color: white;
+        /*font-size: 1.2em;*/
+    }
+
+    .submit_login:focus {
+        display: block;
+        width: 40%;
+        margin: 0 auto 0 auto;
+        border-radius: 4px;
+        background-color: white;
+        padding: 2%;
+        border: 1px solid orange;
+        border-radius: 4px;
+        color: black;
+    }
+
+    .submit_login:hover {
+        background-color: black;
+        color: orange;
+        border-color: white;
+    }
+
+    .login a {  /*PRESET para todos los botones tipo FB o google que se pongan*/
+        display: block;
+        text-decoration: none;
+        border-radius: 4px;
+    }
+
+    .fb_button { /*BOTON FB*/
+        box-sizing: border-box;
+        color: #fff;
+        margin-left: 30%;
+        text-align: center;
+        padding: 2% 7%;
+        text-shadow: none;
+        background-color: #3b5998;
+        width: 75%;
+        margin: 0 auto 0 auto;
+        min-width: 160px;
+        background-image: url("../imagenes/fbicon.png");
+        background-size: contain;
+        background-position: left center;
+        background-repeat: no-repeat;
+    }
+
+    .google_button { /*BOTON google*/
+        box-sizing: border-box;
+        color: #fff;
+        margin-left: 30%;
+        text-align: center;
+        padding: 2% 7%;
+        text-shadow: none;
+        background-color: #3077b5;
+        width: 75%;
+        margin: 0 auto 0 auto;
+        /*max-width: 160px;   */
+        min-width: 160px;
+        background-image: url("../imagenes/Googleicon2.png");
+        background-size: contain;
+        background-position: left center;
+        background-repeat: no-repeat;
+    }
+
+    .campo_formulario { /*campo de texto form login*/
+        display: none;
+    }
+
+}
+
+/*-----------------------------------   DESKTOP --------------------------------------- */
+/*-----------------------------------   DESKTOP --------------------------------------- */
+
+@media (min-width: 550px) {
+
+/*------------- MAIN BODY ------------- */
+
+    .main_body{
+        margin: 0;
+        width: 100%;
+        /*height: 100vh;*/
+        box-sizing: border-box;
+        /*display: block;*/
+        background-image: url("../imagenes/skater.jpg");
+        background-color: #466379;
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+
+    .div_opacity {
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(27, 26, 27, 0.2);
+    }
+
+/*------------- NAVIGATION BAR ------------- */
+
+    .nav_bar_top {
+        box-sizing: border-box;
+        position: relative;
+        /*top: 0;
+        left: 0;*/
+        /*display: inline-block;*/
+        /*background-color: rgba(74, 64, 78, 0.73);*/
+        background-color: black;
+        width: 100%;
+        /*margin-left: auto;
+        margin-right: auto;*/
+        /*height: 80px;*/
+        overflow: hidden;
+        padding: 7px;
+    }
+
+    .ul_nav_bar{
+        width: 100%;
+        /*position: relative;*/
+    }
+
+    .nav_bar_top  ul {
+        display: block;
+        /*height: 90%;*/
+        /*float: left;*/
+    }
+
+    .nav_bar_top .ul_nav_bar li {
+        display: block;
+        width: auto;
+    }
+
+    .button { /*BOTON LOGIN*/
+        /*box-sizing: border-box;
+        position: absolute;
+        bottom: 33%;
+        right: 13%;*/
+        font-family: 'Dosis', sans-serif;
+        text-decoration: none;
+        /*margin-top: 8px;
+        margin-right: 20px;*/
+        color: orange;
+        font-weight: lighter;
+        border: 1px solid white;
+        border-radius: 10%;
+        padding: 10px;
+        /*position: absolute;
+        bottom: 28%;
+        right: 25px;*/
+        text-align: center;
+        float: right;
+        margin-top: 6px;
+        margin-right: 30px;
+    }
+
+    .button:hover{
+        border-color: orange;
+        color: white;
+        background-color: orange;
+    }
+
+    #logo{ /*IMAGEN LOGO insertada x HTML*/
+        display: none;
+    }
+
+    #logo_full{
+        width: 210px;
+        display: block;
+        float: left;
+        margin-top: 2px;
+        margin-left: 15px;
+    }
+
+/*------------- CONTENEDOR LOGIN ------------- */
+
+    .main_section {
+        position: relative;
+    }
+
+    .login{ /*LOGIN con APIs*/
+        width: 50%;
+        background-color: rgba(18, 18, 18, 0.72);
+        /*height: 40%;*/
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        border-radius: 8px;
+        padding-top: 2%;
+        padding-bottom: 1%;
+    }
+
+    /*.login_top h2{
+        background-color: rgba(18, 18, 18, 0.62);
+        text-align: center;
+        margin: 0;
+        color: orange;
+        font-weight: lighter;
+        /*border-radius: 8px;
+        line-height: 1.3em;
+        letter-spacing: 1.5px;
+    }*/
+
+    .login:hover{
+        /*font-size: 1.7em;*/
+        /*font-weight: bold;*/
+        /*letter-spacing: 3px;*/
+        /*text-shadow: 0.5px 0.5px gainsboro;*/
+        box-shadow: 0 0 8px 0 rgba(255,255,255,0.8);
+    }
+
+    input {
+        display: block;
+        width: 60%;
+        margin: 0 auto 0 auto;
+        border-radius: 4px;
+        background-color: rgba(18, 18, 18, -0.68);
+        padding: 1%;
+        border: none;
+        border-bottom: 1px solid orange;
+        border-radius: 4px;
+        color: white;
+        letter-spacing: 1.5px;
+    }
+
+    input:focus{
+        background-color: rgba(18, 18, 18, 0.32);
+        border: 1px solid white;
+        color: white;
+        font-weight: bold;
+        box-shadow: 0 0 4px 0 rgba(255,255,255,0.8);
+    }
+
+    input:hover {
+        border-bottom: 1px solid white;
+        color: white;
+    }
+
+    ::-webkit-input-placeholder {
+        color: rgba(247, 243, 239, 0.76);
+    }
+
+    :-moz-placeholder { /* Firefox 18- */
+            color: rgba(247, 243, 239, 0.76);
+    }
+
+    ::-moz-placeholder {  /* Firefox 19+ */
+            color: rgba(247, 243, 239, 0.76);
+    }
+
+    :-ms-input-placeholder {
+            color: rgba(247, 243, 239, 0.76);
+    }
+
+    .submit_login{
+        display: block;
+        width: 40%;
+        margin: 0 auto 0 auto;
+        border-radius: 4px;
+        background-color: rgba(18, 18, 18, -0.68);
+        padding: 2%;
+        border: 1px solid orange;
+        border-radius: 4px;
+        color: white;
+        font-size: 1.2em;
+    }
+
+    .submit_login:focus {
+        display: block;
+        width: 40%;
+        margin: 0 auto 0 auto;
+        border-radius: 4px;
+        background-color: white;
+        padding: 2%;
+        border: 1px solid orange;
+        border-radius: 4px;
+        color: black;
+    }
+
+    .submit_login:hover {
+        background-color: black;
+        color: orange;
+        border-color: white;
+    }
+
+    .login a {  /*PRESET para todos los botones tipo FB o google que se pongan*/
+        display: block;
+        text-decoration: none;
+        border-radius: 4px;
+    }
+
+    .fb_button { /*BOTON FB*/
+        box-sizing: border-box;
+        color: #fff;
+        margin-left: 30%;
+        text-align: center;
+        padding: 2% 10%;
+        text-shadow: none;
+        background-color: #3b5998;
+        width: 75%;
+        margin: 0 auto 0 auto;
+        min-width: 160px;
+        background-image: url("../imagenes/fbicon.png");
+        background-size: contain;
+        background-position: left center;
+        background-repeat: no-repeat;
+    }
+
+    .google_button { /*BOTON google*/
+        box-sizing: border-box;
+        color: #fff;
+        margin-left: 30%;
+        text-align: center;
+        padding: 2% 10%;
+        text-shadow: none;
+        background-color: #3077b5;
+        width: 75%;
+        margin: 0 auto 0 auto;
+        /*max-width: 160px;   */
+        min-width: 160px;
+        background-image: url("../imagenes/Googleicon2.png");
+        background-size: contain;
+        background-position: left center;
+        background-repeat: no-repeat;
+    }
+
+    .campo_formulario { /*campo de texto form login*/
+        display: none;
+    }
+    .remember_user {
+        display: inline-block;
+        width: 60%;
+        margin: 0 auto 0 auto;
+        margin-left: 20%;
+        overflow: hidden;
+    }
+
+    #remember_user{
+        display: inline-block;
+        font-size: 0.8em;
+        text-indent: 5px;
+        width: auto;
+        color: orange;
+    }
+
+    #olvido_contraseña{
+        text-decoration: none;
+        color: orange;
+        display: inline-block;
+        float: right;
+    }
+
+    #olvido_contraseña:hover{
+        border-bottom: 1px dashed orange;
+    }
+}
